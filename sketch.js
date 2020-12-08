@@ -123,6 +123,7 @@ function mouseReleased(){
 
 function keyPressed(){
    if(keyCode === 32){
-     rope.attach(hexagon.body);
+    Matter.Body.setPosition(hexagon.body,{x:300,y:350});
+    rope.attach(hexagon.body);
    }
 }
