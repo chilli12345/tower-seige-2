@@ -26,7 +26,7 @@ class Box{
             World.remove(world, this.body);
             if(this.visibility>0){
                 push();
-                this.visibility=this.visibility-30;
+                this.visibility=this.visibility-60;
                 tint(255,this.visibility);
                 image(this.image,this.body.position.x,this.body.position.y,this.width,this.height);
                 pop();
